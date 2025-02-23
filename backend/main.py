@@ -2,7 +2,7 @@
 # coding: utf-8
 import pandas as pd
 import numpy as np
-import psycopg2  # Не используется, но оставлен, если понадобится
+#import psycopg2  # Не используется, но оставлен, если понадобится
 from flask import Flask, request
 from flask_restful import Api, Resource, reqparse
 import random
