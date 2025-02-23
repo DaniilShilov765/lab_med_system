@@ -10,7 +10,7 @@ from flask_cors import CORS  # Import CORS
 
 application = Flask(__name__)
 origins = "*" #  URL фронтенда
-CORS(application, origins=origins)  # Enable CORS for all routes
+CORS(application, origins=origins, methods=['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], allow_headers=['Content-Type', 'Authorization'], supports_credentials=True)  # Enable CORS for all routes
 api = Api(application)
 
 
