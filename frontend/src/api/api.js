@@ -1,5 +1,5 @@
 import axios from 'axios';
-const BASE_URL = 'http://192.168.1.233:8000/api'; // Адрес с бэком
+const BASE_URL = 'http://192.168.1.233:8005/api'; // Адрес с бэком
 
 export const api = {
   registerUser: async (email, lastName, firstName, patronymic, password) => {
