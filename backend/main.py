@@ -9,7 +9,8 @@ import random
 from flask_cors import CORS  # Import CORS
 
 application = Flask(__name__)
-CORS(application)  # Enable CORS for all routes
+origins = "*" #  URL фронтенда
+CORS(application, origins=origins)  # Enable CORS for all routes
 api = Api(application)
 
 
