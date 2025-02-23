@@ -16,6 +16,8 @@ services:
       - dev
     
   backend:
+    ports:
+      - "8000:8000"
     build:
       context: ./backend
     networks:
